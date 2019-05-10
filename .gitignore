@@ -5,6 +5,8 @@
 
 # VS Code folders
 obj/
+.vscode
+bin
 
 # User-specific files
 *.suo

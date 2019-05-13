@@ -8,7 +8,7 @@ namespace APITests
 {
     public class AuthRepositoryTests
     {
-        private readonly DatingApp.API.Data.IAuthRepository _apiData;
+        private readonly IAuthRepository _apiData;
 
         //TODO: get past the following error:
         /*

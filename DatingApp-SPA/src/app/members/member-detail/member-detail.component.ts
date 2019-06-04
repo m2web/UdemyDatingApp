@@ -40,24 +40,14 @@ export class MemberDetailComponent implements OnInit {
   getImages() {
     const imageUrls = [];
 
-    // **************************************
-    // Uncomment when photos are not null
-    // **************************************
-    // for (let i = 0; i < this.user.photos.length; i++) {
-    //   imageUrls.push({
-    //     small: this.user.photos[i].url,
-    //     medium: this.user.photos[i].url,
-    //     big: this.user.photos[i].url,
-    //     description: this.user.photos[i].description
-    //   });
-    // }
-
-    imageUrls.push({
-      small: this.user.photoUrl,
-      medium: this.user.photoUrl,
-      big: this.user.photoUrl,
-      description: 'Coming soon!'
-    });
+    for (let i = 0; i < this.user.photos.length; i++) {
+      imageUrls.push({
+        small: this.user.photos[i].url,
+        medium: this.user.photos[i].url,
+        big: this.user.photos[i].url,
+        description: this.user.photos[i].description
+      });
+    }
 
     return imageUrls;
   }

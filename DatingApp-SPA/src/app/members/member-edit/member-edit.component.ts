@@ -39,4 +39,8 @@ export class MemberEditComponent implements OnInit {
     });
   }
 
+  udpateMainPhoto(photoUrl) {
+    this.user.photoUrl = photoUrl;
+  }
+
 }
